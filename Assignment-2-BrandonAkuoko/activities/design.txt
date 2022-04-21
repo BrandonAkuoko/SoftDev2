@@ -1,0 +1,13 @@
+battle - simulation
+Ship class
+    hull rating(int) - shield(int) - armament (int) - weapon damage(string)
+    user name
+    operational - boolean
+    
+    attack()
+    takeDamage()
+    isOperational()
+weapon
+    damage amount
+    type 
+    getters

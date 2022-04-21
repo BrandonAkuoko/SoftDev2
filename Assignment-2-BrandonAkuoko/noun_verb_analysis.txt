@@ -1,0 +1,52 @@
+enum BookStatus{
+        AVAILABLE, CHECKEDOUT
+}
+
+class Book{    
+    String title, author;
+    BookStatus status; 
+    int copies;
+
+    void checkOutBook()  - change status and copies
+    void returnBook() - changes status and copies
+}
+
+class Patron{
+    Book[] books;
+    String name;
+
+    void checkOutBook(Book book)  - add book to books
+    void returnBook(Book book) - remove book from books
+}
+
+class Library{
+    Book[] books;
+    Patron[] patrons;
+
+    public Patron(String fileName){
+        - Recall that library's entire catalog of books is stored in a text file        
+        - Initialize fields 
+    }
+
+    Patron findPatron(String patronName) - return patron 
+
+    Book findBook(String bookTitle) - return book
+
+
+    void checkOutBook(String patronName, String bookTitle){
+        patron = findPatron(patronName)
+        book = findBook(bookTitle)
+        patron.checkOutBook(book)
+        book.checkOutBook()
+        /* You will need to handle each of the following cases:
+           1. patronName is not found (probably because she is a new patron), or
+           2. bookTitle is not found, or
+           3. the patron is trying to check out a copy of the same book that she already has.
+        */
+    }
+    void returnBook(String patroneName, String bookTitle){
+        ...
+    }
+
+    //main method can be defined here or in a separate class
+}
