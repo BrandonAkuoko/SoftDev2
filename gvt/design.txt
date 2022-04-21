@@ -1,0 +1,19 @@
+Class Attack{
+    String name
+    int damage
+    int timesHit
+    String attackDamage
+
+}
+Common{
+    -state name, currentHP
+
+}
+Class Mage{
+    State: name maxHealth
+    behavioR: attack, attacked,
+}
+Class Fighter{
+        State: name maxHealth
+        behavioR: attack, attacked,
+}

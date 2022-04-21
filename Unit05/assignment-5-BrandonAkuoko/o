@@ -1,0 +1,21 @@
+public void binaryInsert(BinaryNode<E> root, int value){
+        if(value < this.value){
+            if(left == null){
+                this.left = new BinaryNode(value);
+            }
+            else{
+                left.binaryInsert(value);
+            }
+        }
+        else{
+            if(value > this.value){
+                if(right == null){
+                    this.right = new BinaryNode(value);
+                }
+                else{
+                    right.binaryInsert(value);
+                }
+            }
+        }
+
+    }
