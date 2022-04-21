@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		}
+	],
+	"settings": {
+		"java.project.referencedLibraries": [
+			"lib/**/*.jar",
+			"c:\\Users\\brand\\Downloads\\junit-platform-console-standalone-1.7.0-all.jar"
+		],
+		"java.project.sourcePaths": [
+			"tinychat"
+		]
+	}
+}
